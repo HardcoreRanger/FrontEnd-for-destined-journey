@@ -102,7 +102,7 @@
       </button>
       <button
         class="nav-button"
-        :disabled="!selectedCore || isLoading || isSaving"
+        :disabled="isLoading || isSaving"
         @click="handleNext"
       >
         <span>{{ isSaving ? '保存中...' : '下一步' }}</span>
